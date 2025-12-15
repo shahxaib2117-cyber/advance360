@@ -1,0 +1,102 @@
+/* @charset "UTF-8"; */
+@import "tailwindcss";
+/* italic */
+@import url("https://db.onlinewebfonts.com/c/5265249bdc5bb8258d22778263bfbe29?family=Futura+PT+Book+Italic+W08+Rg");
+/* light weight  */
+@import url("https://db.onlinewebfonts.com/c/e6496bea4437a62d21b4f4ea502b18da?family=LFutura");
+/* heavy waight  */
+@import url("https://db.onlinewebfonts.com/c/fb1327a036afb7af261b1f77fa3e5e36?family=FuturaH");
+
+@font-face {
+  font-family: "Futura PT Book Italic W08 Rg";
+  src: url("https://db.onlinewebfonts.com/t/5265249bdc5bb8258d22778263bfbe29.woff2") format("woff2");
+}
+@font-face {
+  font-family: "LFutura";
+  src: url("https://db.onlinewebfonts.com/t/fb1327a036afb7af261b1f77fa3e5e36.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaH";
+  src: url("https://db.onlinewebfonts.com/t/fb1327a036afb7af261b1f77fa3e5e36.woff2") format("woff2");
+}
+
+@theme {
+  /* fonts */
+  --font-display: "Outfit", "sans-serif";
+  /* breakpoints */
+  --breakpoint-s_phone: 319px;
+  --breakpoint-m_phone: 374px;
+  --breakpoint-phone: 424px;
+  --breakpoint-tablet: 767px;
+  --breakpoint-laptop-sm: 900px;
+  --breakpoint-laptop: 1023px;
+  --breakpoint-laptop-lg: 1366px;
+  --breakpoint-desktop: 1439px;
+  --breakpoint-_4kk: 1920px;
+}
+
+.italic-futura {
+  font-family: "Futura PT Book Italic W08 Rg";
+}
+
+.normal-futura{
+  font-family: "LFutura";
+}
+
+.bold-futura{
+  font-family: "FuturaH";
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+ 
+::-webkit-scrollbar{
+  display: none;
+}
+
+.bg-glass{
+  background: #ffffff75;
+  backdrop-filter: blur(10px);
+}
+
+.bg-gradient{
+  background: linear-gradient(360deg, #1B1C67 0%, #0096E8 188.17%);
+}
+
+@keyframes bouncee {
+  0%{
+    transform: translateY(0px);
+  }50%{
+    transform: translateY(-30px);
+  }100%{
+    transform: translateY(0px);
+  }
+}
+
+.animate-mine{
+  animation: bouncee 5s infinite;
+}
+
+@keyframes slide_on {
+  0%{
+    transform: translateX(-200px);
+  }100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide_off {
+  0%{
+    transform: translateX(0px);
+  }100%{
+    transform: translateX(-200px);
+  }
+}
+
+.slide-on{
+animation:slide_on 1s ease-in ;
+}
+.slide-off{
+animation:slide_off 2s ease-in ;
+}
