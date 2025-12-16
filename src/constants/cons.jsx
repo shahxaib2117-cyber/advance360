@@ -27,19 +27,64 @@ export const darkBlue = '#1b1076'
 // links for navbar
 export const links = [
     {
-        text: "Home"
+        text: "Home",
+        path: "#heroSection"
     }, {
         text: "Service",
-        dropdown: true
+        dropdown: {
+            status: true,
+            dataa: [
+                {
+                    miniLink: "link 1"
+                }, {
+                    miniLink: "link 2"
+                }
+            ]
+        },
+        path: "#services"
     }, {
         text: "Goverments",
-        dropdown: true
+        dropdown: {
+            status: true,
+            dataa: [
+                {
+                    miniLink: "link 1"
+                }, {
+                    miniLink: "link 2"
+                }, {
+                    miniLink: "link 3"
+                }
+            ]
+        },
+        path: "#seccessNumbers"
     }, {
         text: "Case stadies",
-        dropdown: true
+        dropdown: {
+            status: true,
+            dataa: [
+                {
+                    miniLink: "link 1"
+                }, {
+                    miniLink: "link 2"
+                }, {
+                    miniLink: "link 3"
+                }, {
+                    miniLink: "link 4"
+                }
+            ]
+        },
+        path: "#itPartners"
     }, {
         text: "About 360s",
-        dropdown: true
+        dropdown: {
+            status: true,
+            dataa: [
+                {
+                    miniLink: "link 1"
+                }
+            ]
+        },
+        path: "#advanceSolutions"
     }
 ]
 

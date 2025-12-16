@@ -4,7 +4,7 @@ import { items } from '../../constants/cons'
 
 const SuccessNumbers = () => {
   return (
-    <div className=' w-[84%] laptop:w-[90%] container flex flex-col items-center gap-7 rounded-[20px] translate-x-8 bg-gradient py-2 mr-15 
+    <div id='seccessNumbers' className=' w-[84%] laptop:w-[90%] container flex flex-col items-center gap-7 rounded-[20px] translate-x-8 bg-gradient py-2 mr-15 
        tablet:rounded-[30px] tablet:p-0 tablet:self-center tablet:w-[50%]
       lg:h-62 lg:p-5 '>
       <div className=" flex justify-center ">

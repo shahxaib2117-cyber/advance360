@@ -5,7 +5,7 @@ import { RiCheckboxCircleLine } from "react-icons/ri";
 import { LiaGripLinesVerticalSolid } from "react-icons/lia";
 const ItPartners = () => {
     return (
-        <div className='w-full flex flex-col tablet:pl-10 tablet:flex-row gap-5 lg:gap-13 lg:items-center laptop:pl-10! lg:pl-30 py-1 tablet:gap-1 '>
+        <div id='itPartners' className='w-full flex flex-col tablet:pl-10 tablet:flex-row gap-5 lg:gap-13 lg:items-center laptop:pl-10! lg:pl-30 py-1 tablet:gap-1 '>
             {/* img */}
             <div className=" flex justify-center items-center h-80 p-5
             m_phone:h-85

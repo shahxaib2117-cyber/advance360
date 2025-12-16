@@ -80,23 +80,27 @@
 
 @keyframes slide_on {
   0%{
-    transform: translateX(-200px);
+    transform: translateY(-130%);
   }100%{
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes slide_off {
   0%{
-    transform: translateX(0px);
+    transform: translateY(0px);
   }100%{
-    transform: translateX(-200px);
+    transform: translateY(-130%);
   }
 }
 
 .slide-on{
-animation:slide_on 1s ease-in ;
+animation:slide_on 500ms ease-in-out forwards ;
 }
 .slide-off{
-animation:slide_off 2s ease-in ;
+animation:slide_off 500ms ease-in-out forwards ;
+}
+
+.button-shadow{
+  box-shadow: 0px 0px 7px 1px rgb(151, 151, 243) ;
 }

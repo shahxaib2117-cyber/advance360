@@ -5,13 +5,16 @@ import Button from '../commons/Button'
 
 const Transforming = () => {
     return (
-        <div className=' flex flex-col-reverse 
+        <div id='heroSection' className=' flex flex-col-reverse
+            tablet:pl-13
+            lg:pl-2
         laptop:flex-row-reverse ' >
             {/* bgdiv */}
             <div className=" h-55 mt-15 tablet:mt-10 translate-x-0 pl-2 -translate-y-7
             m_phone:h-60
             phone:h-70
             phone:flex-65 phone:p-0 
+            tablet:pl-5
             laptop:h-120! laptop:mt-40!
             lg:h-130 lg:mt-30">
 
