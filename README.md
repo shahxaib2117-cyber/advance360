@@ -25,3 +25,6 @@ password
 
 textarea type===textarea text  <textarea>
 select type===select text  <select> -->
+
+npm install
+npm run build

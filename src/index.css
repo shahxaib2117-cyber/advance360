@@ -1,5 +1,4 @@
 /* @charset "UTF-8"; */
-@import "tailwindcss";
 /* italic */
 @import url("https://db.onlinewebfonts.com/c/5265249bdc5bb8258d22778263bfbe29?family=Futura+PT+Book+Italic+W08+Rg");
 /* light weight  */
@@ -19,6 +18,7 @@
   font-family: "FuturaH";
   src: url("https://db.onlinewebfonts.com/t/fb1327a036afb7af261b1f77fa3e5e36.woff2") format("woff2");
 }
+@import "tailwindcss";
 
 @theme {
   /* fonts */
