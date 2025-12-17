@@ -7,16 +7,15 @@ import HomeLayout from './layouts/HomeLayout'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Form from './components/homeComponents/Form'
 
 function App() {
 
   return (
     <>
-      <div className='appjsx-file min-h-screen w-full flex flex-col relative overflow-x-hidden '>
-        <div className="w-full top-0 absolute overflow-hidden "><Navbar /></div>
-        <Home />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path='/*' element={<HomeLayout />} />
+      </Routes>
     </>
   )
 }

@@ -23,8 +23,12 @@ email
 text default
 password
 
-textarea type===textarea text  <textarea>
-select type===select text  <select> -->
+<!-- --------======----------===========--------------======------===->today tasks<-===------======----------===========--------------======------- -->
 
-npm install
-npm run build
+<!-- task 1 -->
+<!-- footer k button par loading or alert of massege "form submitted" -->
+<!-- task 2 -->
+<!-- service k cards par modal jis main unn carde ka title or aik pera -->
+<!-- task 3 -->
+<!-- footer k links ko working banana or last blu line main apex web stodios ka link lagana -->
+

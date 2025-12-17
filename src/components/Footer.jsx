@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import Button from './commons/Button'
 import { footer_array } from '../constants/cons'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
+
+    const [isLoading, setIsLoading] = useState(false)
+    console.log("🚀 ~ Footer ~ isLoading:", isLoading)
+
+    const handleLoading = () => {
+        setIsLoading(true)
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 1000);
+        setTimeout(() => {
+            alert("form submitted!")
+        }, 1200);
+    }
+    // px-13 tablet:px-33
     return (
         <div className='w-full flex flex-col items-center mt-25 '>
             <div className="container px-5 tablet:px-14 lg:px-0 ">
@@ -13,7 +28,8 @@ const Footer = () => {
                         <img src={logo} alt="" className='h-15 ' />
                         <p className='mt-5 futura-font italic-futura text-[#1B1C67] font-semibold '>Sign up for the Advance 360 Solutions newsletter <br /> for updates:</p>
                         <input type="text" className='h-9 w-50 tablet:w-90 mt-4 pl-3 border-2 rounded-md text-[13px] border-[#767575] outline-none ' placeholder='Enter Your name' />
-                        <Button className={"px-13 tablet:px-33 mt-4 py-1! rounded-sm! text-[14px]! "} arrow={true} lable={"Let's Do It"} />
+                        <Button className={`${isLoading && " tablet:px-30! "} px-13 tablet:px-33 mt-4 py-1! rounded-sm! text-[14px]! `} arrow={true} onclick={handleLoading} isLoading={isLoading}
+                            lable={"Let's Do It"} />
                     </div>
                     {/* child_2 */}
                     <div className="flex-1 flex flex-col mt-10 gap-10 justify-between
@@ -48,7 +64,9 @@ const Footer = () => {
             </div>
             {/* footer blue line */}
             <div className="h-13 w-full flex justify-center items-center bg-[#1B1C67] mt-12 ">
-                <div className="text-white text-[12px] text-center md:text-start ">Ⓒ All Rights Reserved 2024 -Advance 360 Solutions. Powered by Apex Web Studios</div>
+                <div className="text-white text-[12px] text-center md:text-start ">Ⓒ All Rights Reserved 2024 -Advance 360 Solutions. Powered by
+                    <a href="https://apexwebstudios.net/" className='underline' > Apex Web Studios</a>
+                </div>
             </div>
         </div>
     )

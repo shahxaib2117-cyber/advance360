@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
     return (
-        <div className='min-h-screen flex flex-col justify-center mt-14 phone:mt-0 desktop:mt-19 gap-10 '>
+        <div className='min-h-screen flex flex-col justify-center gap-10 '>
             <Transforming />
             <SuccessNumbers />
             <ItPartners />

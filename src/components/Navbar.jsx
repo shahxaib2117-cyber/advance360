@@ -5,6 +5,7 @@ import Button from './commons/Button';
 import { links } from '../constants/cons';
 import { IoMenuOutline } from "react-icons/io5";
 import Modal from './commons/Modal';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     // toggle for menu button
@@ -66,7 +67,7 @@ const Navbar = () => {
                 </div>
                 {/* BUTTON */}
                 <div className="h-full flex justify-center items-center tablet:w-50 tablet:mr-15 ">
-                    <Button lable={"Contact Us"} />
+                    <Link to={"/contactUs"}> <Button lable={"Contact Us"} /></Link>
                 </div>
             </div>
             <div className={` w-full bg-slate-300 z-40 fixed flex flex-col justify-center items-center lg:hidden py-5 gap-2 mt-14 tablet:mt-19 
