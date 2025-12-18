@@ -7,7 +7,7 @@ import HomeLayout from './layouts/HomeLayout'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Form from './components/homeComponents/Form'
+import Form from './components/homeComponents/ContactUs'
 
 function App() {
 

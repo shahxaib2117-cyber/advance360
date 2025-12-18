@@ -28,7 +28,7 @@ export const darkBlue = '#1b1076'
 export const links = [
     {
         text: "Home",
-        path: "#heroSection"
+        path: "heroSection"
     }, {
         text: "Service",
         dropdown: {
@@ -41,7 +41,7 @@ export const links = [
                 }
             ]
         },
-        path: "#services"
+        path: "services"
     }, {
         text: "Goverments",
         dropdown: {
@@ -56,7 +56,7 @@ export const links = [
                 }
             ]
         },
-        path: "#seccessNumbers"
+        path: "seccessNumbers"
     }, {
         text: "Case stadies",
         dropdown: {
@@ -73,7 +73,7 @@ export const links = [
                 }
             ]
         },
-        path: "#itPartners"
+        path: "itPartners"
     }, {
         text: "About 360s",
         dropdown: {
@@ -84,7 +84,7 @@ export const links = [
                 }
             ]
         },
-        path: "#advanceSolutions"
+        path: "advanceSolutions"
     }
 ]
 

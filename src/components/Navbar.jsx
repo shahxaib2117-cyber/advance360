@@ -5,7 +5,7 @@ import Button from './commons/Button';
 import { links } from '../constants/cons';
 import { IoMenuOutline } from "react-icons/io5";
 import Modal from './commons/Modal';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     // toggle for menu button
@@ -24,10 +24,20 @@ const Navbar = () => {
         setToggle(!toggle)
     }
 
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    const handleNavigate = (data) => {
+        navigate("/")
+        setTimeout(() => {
+            document.getElementById(data.path)?.scrollIntoView({ behavior: "smooth" })
+            console.log("🚀 ~ handleNavigate ~ (data.path:", (data.path))
+        }, 200);
+    }
+
     return (
         <div className=" w-full flex flex-col ">
             <div className='w-full bg-glass h-14 tablet:h-19 flex justify-between items-center px-2 z-50 fixed tablet:pl-15 '>
-                {/* LOGO */}
                 <div className="h-10 w-10 flex justify-center items-center laptop:hidden ">
                     <div className={`${toggle ? "transition-all button-shadow duration-200 p-1 rounded-full " :
                         " "
@@ -35,15 +45,18 @@ const Navbar = () => {
                         <IoMenuOutline onClick={() => handleSetClass()} className={` text-[25px] text-[#1f5898] `} />
                     </div>
                 </div>
-                <div className="h-12 w-36 tablet:19 tablet:w-60 p-1 ml-5 tablet:ml-10 tablet:h-18 ">
-                    <img src={logo} className='h-full ' alt="" />
-                </div>
+                {/* LOGO */}
+                <Link to={"/"}>
+                    <div className="h-12 w-36 tablet:19 tablet:w-60 p-1 ml-5 tablet:ml-10 tablet:h-18 cursor-pointer ">
+                        <img src={logo} className='h-full ' alt="" />
+                    </div>
+                </Link>
                 {/* LINKS */}
                 <div className="h-full hidden flex-1 laptop:flex justify-around items-center gap-5 px-20 ">
                     {
                         links.map((data, index) => (
-                            <div key={index} onMouseEnter={() => setDropDownId(index)} onMouseLeave={() => setDropDownId(null)} className='relative '>
-                                <a href={data.path} className=" flex justify-between items-center gap-1">
+                            <div key={index} onMouseEnter={() => setDropDownId(index)} onMouseLeave={() => setDropDownId(null)} className=' cursor-pointer relative '>
+                                <div onClick={() => handleNavigate(data)} className=" flex justify-between items-center gap-1">
                                     {/* text */}
                                     <div className="text-[14px] font-semibold whitespace-nowrap ">{data.text}</div>
                                     {/* dropdown icon */}
@@ -52,7 +65,7 @@ const Navbar = () => {
                                         :
                                         <div className=""></div>
                                     }
-                                </a>
+                                </div>
                                 <div className={`duration-500 overflow-hidden rounded-md bg-[#ebebeb] px-3 border-[#acc0f3] absolute 
                                     ${(data?.dropdown?.status && dropDownId === index) ? " max-h-32 opacity-100 " : " max-h-0 opacity-0 "}  border-2 absolute p-2 `}>
                                     {
@@ -74,10 +87,10 @@ const Navbar = () => {
             ${clasName == null ? "hidden" : clasName}  `}>
                 {
                     links.map((data, index) => (
-                        <a href={data.path} key={index} className=" flex justify-between items-center p-1 gap-1 ">
+                        <div onClick={() => handleNavigate(data)} key={index} className=" flex justify-between items-center p-1 gap-1 ">
                             {/* text */}
                             <div className="text-[14px] font-semibold whitespace-nowrap ">{data.text}</div>
-                        </a>
+                        </div>
                     ))
                 }
             </div>

@@ -3,7 +3,11 @@ import Navbar from '../components/Navbar'
 import Home from '../pages/Home'
 import Footer from '../components/Footer'
 import { Route, Routes } from 'react-router-dom'
-import Form from '../components/homeComponents/Form'
+import Form from '../components/homeComponents/ContactUs'
+import Service from '../components/homeComponents/Service'
+import SuccessNumbers from '../components/homeComponents/SuccessNumbers'
+import ItPartners from '../components/homeComponents/ItPartners'
+import Transforming from '../components/homeComponents/Transforming'
 
 const HomeLayout = ({ children }) => {
     return (

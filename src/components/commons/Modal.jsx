@@ -15,7 +15,7 @@ const Modal = ({ children, isOpen, className, onClose }) => {
 
 
     return createPortal(
-        <div onClick={onClose} className={` fixed flex justify-center items-center inset-0 z-50 bg-[#31303065]`}  >
+        <div onClick={onClose} className={` fixed flex justify-center items-center inset-0 z-50 backdrop-blur-xs bg-[#31303065]`}  >
             <div className={` ${className} bg-[#ffffff] flex flex-col `}>
                 <div className="w-full flex justify-end pr-2 ">
                     <button onClick={onClose}

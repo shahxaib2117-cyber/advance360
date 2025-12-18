@@ -8,6 +8,7 @@ const Footer = () => {
 
     const [isLoading, setIsLoading] = useState(false)
     console.log("🚀 ~ Footer ~ isLoading:", isLoading)
+    const [input, setInput] = useState('')
 
     const handleLoading = () => {
         setIsLoading(true)
@@ -15,10 +16,11 @@ const Footer = () => {
             setIsLoading(false)
         }, 1000);
         setTimeout(() => {
-            alert("form submitted!")
+            setInput('')
+            alert(input + " " + "submited!")
         }, 1200);
     }
-    // px-13 tablet:px-33
+    // px-13 tablet:px-33 
     return (
         <div className='w-full flex flex-col items-center mt-25 '>
             <div className="container px-5 tablet:px-14 lg:px-0 ">
@@ -27,8 +29,12 @@ const Footer = () => {
                     <div className=" ">
                         <img src={logo} alt="" className='h-15 ' />
                         <p className='mt-5 futura-font italic-futura text-[#1B1C67] font-semibold '>Sign up for the Advance 360 Solutions newsletter <br /> for updates:</p>
-                        <input type="text" className='h-9 w-50 tablet:w-90 mt-4 pl-3 border-2 rounded-md text-[13px] border-[#767575] outline-none ' placeholder='Enter Your name' />
-                        <Button className={`${isLoading && " tablet:px-30! "} px-13 tablet:px-33 mt-4 py-1! rounded-sm! text-[14px]! `} arrow={true} onclick={handleLoading} isLoading={isLoading}
+                        <input
+                            onChange={(e) => setInput(e.target.value)}
+                            value={input}
+                            type="text"
+                            className='h-9 w-50 tablet:w-90 mt-4 pl-3 border-2 rounded-md text-[13px] border-[#767575] outline-none ' placeholder='Enter Your name' />
+                        <Button disabled={!input} className={`${isLoading && " tablet:px-30! "} px-13 tablet:px-33 mt-4 py-1! rounded-sm! text-[14px]! `} arrow={true} onclick={handleLoading} isLoading={isLoading}
                             lable={"Let's Do It"} />
                     </div>
                     {/* child_2 */}

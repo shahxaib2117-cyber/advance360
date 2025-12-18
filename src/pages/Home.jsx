@@ -4,7 +4,7 @@ import SuccessNumbers from '../components/homeComponents/SuccessNumbers'
 import ItPartners from '../components/homeComponents/ItPartners'
 import Service from '../components/homeComponents/Service'
 import AdvanceSolutions from '../components/homeComponents/AdvanceSolutions'
-import Form from '../components/homeComponents/Form'
+import Form from '../components/homeComponents/ContactUs'
 import Footer from '../components/Footer'
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
             <ItPartners />
             <Service />
             <AdvanceSolutions />
-            {/* <Form /> */}
+            <Form />
         </div>
     )
 }
