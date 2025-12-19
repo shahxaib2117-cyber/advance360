@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
 
     const [isLoading, setIsLoading] = useState(false)
-    console.log("🚀 ~ Footer ~ isLoading:", isLoading)
     const [input, setInput] = useState('')
 
     const handleLoading = () => {
@@ -20,7 +19,7 @@ const Footer = () => {
             alert(input + " " + "submited!")
         }, 1200);
     }
-    // px-13 tablet:px-33 
+
     return (
         <div className='w-full flex flex-col items-center mt-25 '>
             <div className="container px-5 tablet:px-14 lg:px-0 ">
@@ -28,13 +27,13 @@ const Footer = () => {
                     {/* child_1 */}
                     <div className=" ">
                         <img src={logo} alt="" className='h-15 ' />
-                        <p className='mt-5 futura-font italic-futura text-[#1B1C67] font-semibold '>Sign up for the Advance 360 Solutions newsletter <br /> for updates:</p>
+                        <p className='mt-5 futura-font italic-futura text-primry_color font-semibold '>Sign up for the Advance 360 Solutions newsletter <br /> for updates:</p>
                         <input
                             onChange={(e) => setInput(e.target.value)}
                             value={input}
                             type="text"
                             className='h-9 w-50 tablet:w-90 mt-4 pl-3 border-2 rounded-md text-[13px] border-[#767575] outline-none ' placeholder='Enter Your name' />
-                        <Button disabled={!input} className={`${isLoading && " tablet:px-30! "} px-13 tablet:px-33 mt-4 py-1! rounded-sm! text-[14px]! `} arrow={true} onclick={handleLoading} isLoading={isLoading}
+                        <Button disabled={!input} className={`${isLoading && "px-10! tablet:px-30! "} px-13 tablet:px-33 mt-4 py-1! rounded-sm! text-[14px]! `} arrow={true} onclick={handleLoading} isLoading={isLoading}
                             lable={"Let's Do It"} />
                     </div>
                     {/* child_2 */}
@@ -44,7 +43,7 @@ const Footer = () => {
                             footer_array.map((data, index) => (
                                 <div key={index} className="flex flex-col gap-4 w-50 ">
                                     {/* tilte */}
-                                    <p className='text-[20px] text-[#1B1C67] normal-futura '>{data.title}</p>
+                                    <p className='text-[20px] text-primry_color normal-futura '>{data.title}</p>
                                     {
                                         data.text_array.map((dat, ind) => (
                                             <div key={ind} className=" flex gap-2 ">
@@ -69,7 +68,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* footer blue line */}
-            <div className="h-13 w-full flex justify-center items-center bg-[#1B1C67] mt-12 ">
+            <div className="h-13 w-full flex justify-center items-center bg-primry_color mt-12 ">
                 <div className="text-white text-[12px] text-center md:text-start ">Ⓒ All Rights Reserved 2024 -Advance 360 Solutions. Powered by
                     <a href="https://apexwebstudios.net/" className='underline' > Apex Web Studios</a>
                 </div>

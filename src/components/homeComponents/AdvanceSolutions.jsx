@@ -9,8 +9,8 @@ const AdvanceSolutions = () => {
             <div className=" w-full flex flex-col-reverse gap-15 md:flex-row  ">
                 <div className="flex-1 flex flex-col lg:ml-5 lg:mt-30 ">
                     <div className=" ">
-                        <p className='text-[20px] tablet:text-[25px] lg:text-[37px] text-[#0096e8] leading-6 tablet:leading-7 lg:leading-8 bold-futura '>Advanced solutions for <br /> advanced problems.</p>
-                        <p className='text-[20px] tablet:text-[25px] lg:text-[37px] text-[#1B1C67] leading-6 tablet:leading-7 lg:leading-8 bold-futura  '>Schedule a free consultation <br />with Advanced360 Solutions <br /> today.</p>
+                        <p className='text-[20px] tablet:text-[25px] lg:text-[37px] text-secondry_color leading-6 tablet:leading-7 lg:leading-8 bold-futura '>Advanced solutions for <br /> advanced problems.</p>
+                        <p className='text-[20px] tablet:text-[25px] lg:text-[37px] text-primry_color leading-6 tablet:leading-7 lg:leading-8 bold-futura  '>Schedule a free consultation <br />with Advanced360 Solutions <br /> today.</p>
                         <Button lable={"Contact Us"} className={" mt-5 lg:px-9 lg::mt-10 lg:scale-[1.25] lg:ml-5 "} />
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const AdvanceSolutions = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center gap-10 mt-20 ">
-                <p className='text-[25px] md:text-[40px] bold-futura text-[#1B1C67] '>Our Trusted Partners </p>
+                <p className='text-[25px] md:text-[40px] bold-futura text-primry_color '>Our Trusted Partners </p>
                 <div className=" w-full! flex flex-col gap-y-5 
                  phone:grid grid-cols-2
                  tablet:flex-row tablet:justify-around 

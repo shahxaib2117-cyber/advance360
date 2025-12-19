@@ -170,16 +170,16 @@ export const form_info = [
 // forn icons array
 export const icons_array = [
     {
-        icon: <FaFacebookF className='text-[25px] text-[#ececec] ' />
+        icon: <FaFacebookF className='text-[18px] laptop:text-[25px] text-[#ececec] ' />
     }, {
-        icon: <FaInstagram className='text-[25px] text-[#1b1076] ' />
+        icon: <FaInstagram className='text-[18px] laptop:text-[25px] text-primry_color ' />
     }, {
-        icon: <FaTwitter className='text-[25px] text-[#ececec] ' />
+        icon: <FaTwitter className='text-[18px] laptop:text-[25px] text-[#ececec] ' />
     }
 ]
 
 // footer array
-const clas = "h-6 w-6 rounded-full flex justify-center items-center bg-[#1b1076] "
+const clas = "h-6 w-6 rounded-full flex justify-center items-center bg-primry_color "
 export const footer_array = [
     {
         title: "Quick Links",
@@ -213,13 +213,13 @@ export const footer_array = [
         title: "Get In Touch",
         text_array: [
             {
-                icon: <FaLocationDot className='text-[20px] text-[#1b1076] ' />,//mail
+                icon: <FaLocationDot className='text-[20px] text-primry_color ' />,//mail
                 text: "46164 Westlake Dr. #650422 Sterling, VA 20165-9998",
             }, {
-                icon: <MdOutlineMailOutline className='text-[20px] text-[#1b1076] ' />,
+                icon: <MdOutlineMailOutline className='text-[20px] text-primry_color ' />,
                 text: "info@a360s.com",
             }, {
-                icon: <IoCall className='text-[20px] text-[#1b1076] ' />,
+                icon: <IoCall className='text-[20px] text-primry_color ' />,
                 text: "+1 (703) 644-8000 ",
             }
         ],
@@ -230,4 +230,3 @@ export const footer_array = [
         ]
     }
 ]
-

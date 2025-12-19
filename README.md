@@ -23,12 +23,4 @@ email
 text default
 password
 
-<!-- --------======----------===========--------------======------===->today tasks<-===------======----------===========--------------======------- -->
-
-<!-- task 1 -->
-<!-- footer k button par loading or alert of massege "form submitted" -->
-<!-- task 2 -->
-<!-- service k cards par modal jis main unn carde ka title or aik pera -->
-<!-- task 3 -->
-<!-- footer k links ko working banana or last blu line main apex web stodios ka link lagana -->
-
+<!-- --------======----------===========--------------======------===->today tasks<-===------======--------------===========----------======------- -->

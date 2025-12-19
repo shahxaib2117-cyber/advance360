@@ -1,10 +1,7 @@
 /* @charset "UTF-8"; */
 /* italic */
-@import url("https://db.onlinewebfonts.com/c/5265249bdc5bb8258d22778263bfbe29?family=Futura+PT+Book+Italic+W08+Rg");
 /* light weight  */
-@import url("https://db.onlinewebfonts.com/c/e6496bea4437a62d21b4f4ea502b18da?family=LFutura");
 /* heavy waight  */
-@import url("https://db.onlinewebfonts.com/c/fb1327a036afb7af261b1f77fa3e5e36?family=FuturaH");
 
 @font-face {
   font-family: "Futura PT Book Italic W08 Rg";
@@ -33,6 +30,9 @@
   --breakpoint-laptop-lg: 1366px;
   --breakpoint-desktop: 1439px;
   --breakpoint-_4kk: 1920px;
+
+  --color-primry_color: #1B1C67;
+  --color-secondry_color: #0096E8;
 }
 
 .italic-futura {

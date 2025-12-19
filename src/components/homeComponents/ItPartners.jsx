@@ -30,15 +30,15 @@ const ItPartners = () => {
                 <Button lable={"Read More"} className={"mt-5 md:px-10 lg:mt-7 "} />
                 {/* checks */}
                 <div className='flex gap-1 mt-6 '>
-                    <RiCheckboxCircleLine className='text-[18px] md:text-[21px] text-[#1B1C67] ' />
+                    <RiCheckboxCircleLine className='text-[18px] md:text-[21px] text-primry_color ' />
                     <p className='text-[12px] font-semibold normal-futura phone:text-[13px] tablet:text-[13px] leading-3 tablet:font-light laptop:text-[14px] '>We carefully evaluate to ensure there is a real and meaningful <br /> connection in each partner relationship.</p>
                 </div>
                 <div className='flex gap-1 mt-4 '>
-                    <RiCheckboxCircleLine className='text-[18px] md:text-[21px] text-[#1B1C67] ' />
+                    <RiCheckboxCircleLine className='text-[18px] md:text-[21px] text-primry_color ' />
                     <p className='text-[12px] font-semibold normal-futura phone:text-[13px] tablet:text-[13px] leading-3 tablet:font-light laptop:text-[14px] '>We ensure there is a cultural alignment, their character and <br /> business practices must match ours.</p>
                 </div>
                 <div className='flex gap-1 mt-4 '>
-                    <RiCheckboxCircleLine className='text-[18px] md:text-[21px] text-[#1B1C67] ' />
+                    <RiCheckboxCircleLine className='text-[18px] md:text-[21px] text-primry_color ' />
                     <p className='text-[12px] font-semibold normal-futura phone:text-[13px] tablet:text-[13px] leading-3 tablet:font-light laptop:text-[14px] '>We treat your business and your team like they are ours.</p>
                 </div>
             </div>

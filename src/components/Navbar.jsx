@@ -24,10 +24,10 @@ const Navbar = () => {
         setToggle(!toggle)
     }
 
-    const location = useLocation()
     const navigate = useNavigate()
 
     const handleNavigate = (data) => {
+        console.log("🚀 ~ handleNavigate ~ data:", data)
         navigate("/")
         setTimeout(() => {
             document.getElementById(data.path)?.scrollIntoView({ behavior: "smooth" })
@@ -80,7 +80,7 @@ const Navbar = () => {
                 </div>
                 {/* BUTTON */}
                 <div className="h-full flex justify-center items-center tablet:w-50 tablet:mr-15 ">
-                    <Link to={"/contactUs"}> <Button lable={"Contact Us"} /></Link>
+                    <Button url={"/contactUs"} lable={"Contact Us"} />
                 </div>
             </div>
             <div className={` w-full bg-slate-300 z-40 fixed flex flex-col justify-center items-center lg:hidden py-5 gap-2 mt-14 tablet:mt-19 
